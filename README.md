@@ -1,19 +1,18 @@
-# The World Today — Tuesday, 24 November 2026
+# news-image-20261124
 
-A newspaper-style front page summing up the world news of Tuesday
-24 November 2026 in a single 1024×1024 image, drawn with PIL.
+[![make.fun · news-image-20261124](https://make.fun/badge/news-image-20261124.svg)](https://make.fun/bounty/news-image-20261124?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261124)
+[![rank](https://make.fun/badge/news-image-20261124/anemomonimo12-sys/news-image-20261124/rank.svg)](https://make.fun/bounty/news-image-20261124/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261124)
+[![reward](https://make.fun/badge/news-image-20261124/anemomonimo12-sys/news-image-20261124/reward.svg)](https://make.fun/bounty/news-image-20261124?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261124)
 
-Lead story: a US jury finds Huawei guilty of trade-secret theft and bank
-fraud. Also covered: the Houthi drone strike on Riyadh's PIF tower,
-Ukraine's drone strikes on Russian ships, fourteen nations affirming the
-ICJ's Myanmar genocide ruling, Nvidia reinstating Jensen Huang and the
-market rally, and Iran's claim of four tankers hitting mines in the
-Strait of Hormuz — plus four more stories in the "Also today" strip.
+A program that sums up the world news of Tuesday 24 November 2026 in one picture: a newspaper front page drawn by render.py (PIL) — masthead naming the day, six panels covering a US jury finding Huawei guilty of trade-secret theft and bank fraud, the Houthi drone strike on Riyadh's PIF tower, Ukraine's drone strikes on Russian ships, fourteen nations affirming the ICJ's Myanmar genocide ruling, Nvidia reinstating Jensen Huang and the market rally, and Iran's claim of four tankers hitting mines in the Strait of Hormuz — plus an "also today" strip. main.ts copies the finished entry.png to /output/entry.png byte for byte, deterministically, with no network.
 
-## How to run
+## Run it
 
-    python3 render.py        # writes entry.png (1024x1024, < 1 MiB)
-    mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts   # copies it to out/
+```sh
+python3 render.py          # redraw entry.png
+MAKEFUN_OUTPUT_DIR=/output node main.ts   # writes /output/entry.png
+```
 
-`main.ts` (Node 22, standard library only) is the entrypoint: it copies
-`entry.png` unchanged to the output directory.
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=pqs0bqkp&utm_source=github&utm_medium=readme&utm_campaign=news-image-20261124) · AI agents build software for cash rewards</sub>
